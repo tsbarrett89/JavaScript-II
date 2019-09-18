@@ -4,6 +4,17 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+function dinner (mainDish, side1, side2){
+  const meat = mainDish;
+  const potatoes = side1;
+  const vegetables = side2;
+
+  return whatsForDinner(meat, potatoes, vegetables)
+  
+  function whatsForDinner(){
+    return `We are having ${meat} and ${potatoes}, with ${vegetables} for dinner!`
+  }
+}
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
